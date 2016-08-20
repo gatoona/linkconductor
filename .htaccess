@@ -1,0 +1,7 @@
+## Link Conductor
+## Simple URL redirect platform with manager
+## @author Jeffrey Wang (jeffw16)
+## @license MIT License
+
+RewriteEngine On
+RewriteRule ^(.*)$ index.php?r=$1
