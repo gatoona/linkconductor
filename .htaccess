@@ -4,4 +4,4 @@
 ## @license MIT License
 
 RewriteEngine On
-RewriteRule ^(.*)$ index.php?r=$1
+RewriteRule ^([a-zA-Z0-9]+)$ index.php?r=$1

@@ -6,9 +6,11 @@
  * @license MIT License
 */
 
-$r = json_decode( file_get_contents(__DIR__ . '/redirects.json') , true);
-if ( in_array ( $_REQUEST['r'], $r ) ) {
-    header('Location:' . $r[$_REQUEST['r']]);
+$redirects = json_decode( file_get_contents(__DIR__ . '/redirects.json') , true);
+$requested = $_GET['r'];
+if ( array_key_exists ( $requested, $redirects ) ) {
+    header('Location:' . $redirects[$requested]);
 } else {
-    echo "Link not found";
+    echo("Link not found: " . $requested);
+    print_r($redirects);
 }
