@@ -24,13 +24,13 @@ foreach ( $redirects as $short => $full ) {
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LinkConductor Manager</title>
+  <title>Link Conductor Manager</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
   <div class="container">
     <div class="row">
-      <h1>LinkConductor Manager</h1>
+      <h1>Link Conductor Manager</h1>
       <?php
       if ( $_POST['action'] === 'save' && $_POST['password'] === $password ) {
         $total = $_POST['total'];
@@ -43,7 +43,7 @@ foreach ( $redirects as $short => $full ) {
         ?>
         <p class="lead">Saved!</p>
         <p>Your links were successfully saved.</p>
-        <a href="manage.php">Return to LinkConductor Manager</a>
+        <a href="manage.php">Return to Link Conductor Manager</a>
         <?php
       } elseif ( $_POST['password'] === $password ) {
         ?>
