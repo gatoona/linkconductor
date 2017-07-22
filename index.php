@@ -12,5 +12,4 @@ if ( array_key_exists ( $requested, $redirects ) ) {
     header('Location:' . $redirects[$requested]);
 } else {
     echo("Link not found: " . $requested);
-    print_r($redirects);
 }
